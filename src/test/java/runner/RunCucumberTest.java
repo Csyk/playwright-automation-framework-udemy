@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/test/resources/features/",
         glue = "step_definitions",
-        tags = "@smoke"
+        tags = "@contact-us and not @ignore"
 )
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
 }
